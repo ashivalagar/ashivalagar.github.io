@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.css';
 import './App.css';
-import { Landing, Home } from './pages/Pages';
+import { Landing, Home, Project } from './pages/Pages';
 import * as serviceWorker from './serviceWorker';
 import {
     BrowserRouter as Router,
@@ -19,6 +19,7 @@ class Routing extends React.Component {
                 <Switch>
                     <Route exact path="/" component={withRouter(Landing)} />
                     <Route path="/home" component={withRouter(Home)} />
+                    <Route path="/projects" component={withRouter(Project)} />
                 </Switch>
             </Router>
         );

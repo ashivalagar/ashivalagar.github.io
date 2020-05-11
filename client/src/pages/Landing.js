@@ -16,13 +16,17 @@ class Landing extends React.Component {
                 break;
             case "2":
                 console.log("Projects");
-                path = `/home`
+                path = `/projects`
                 break;
             case "3":
                 console.log("Contact Me");
                 path = `/home`;
                 break;
             case "4":
+                console.log("Blog");
+                path = `/home`;
+                break;
+            case "5":
                 console.log("Resume");
                 path = `/home`;
                 break;
@@ -47,7 +51,11 @@ class Landing extends React.Component {
                     <Icon type="phone" />
                     Contact
               </Menu.Item>
-                <Menu.Item className="menu-item" key="4">
+              <Menu.Item className="menu-item" key="4">
+                    <Icon type="file" />
+                    Blog
+              </Menu.Item>
+              <Menu.Item className="menu-item" key="5">
                     <Icon type="file-text" />
                     Resume
               </Menu.Item>

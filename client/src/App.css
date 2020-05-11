@@ -25,13 +25,13 @@
 }
 
 .menu {
-  height: 35vh;
+  height: 40vh;
   width: 25vw;
   border-radius: 15px;
 }
 
 .menu-item {
-  height: 25%;
+  height: 20%;
   border-radius: 15px;
   font-size: large;
   display: flex;
