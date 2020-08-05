@@ -1,7 +1,7 @@
 import React from "react";
 
 function App() {
-  return <div>App</div>;
+  return <div>Lorems ipsum, testing workflow</div>;
 }
 
 export default App;
