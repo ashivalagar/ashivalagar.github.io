@@ -1,9 +1,11 @@
 name: Deployment
 on:
   push:
-    branches: [prod/client]
+    branches:
+      - prod/client
   pull_request:
-    branches: [prod/client]
+    branches:
+      - prod/client
 jobs:
   deploy:
     runs-on: ubuntu-latest
