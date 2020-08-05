@@ -1,13 +1,11 @@
 name: Deployment
 on:
   push:
-    branches:
-      - prod/client
+    branches: [prod/client]
   pull_request:
-    branches:
-      - prod/client
+    branches: [prod/client]
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
