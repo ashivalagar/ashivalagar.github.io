@@ -13,6 +13,7 @@ export const RightWrapper = styled.div`
   -webkit-justify-content: center;
   justify-content: center;
   height: 100%;
+  background: white;
 `;
 
 export const IconStyling = styled.div`
