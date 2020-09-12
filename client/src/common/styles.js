@@ -17,12 +17,19 @@ export const MainWrapper = styled.div`
   flex-direction: column;
   -webkit-flex-direction: column;
   position: relative;
+  height: 100%;
+  width: 100%;
 `;
 
 export const ContentWrapper = styled.div`
-  display: block;
-  display: -webkit-block;
-  overflow: hidden;
-  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
+  postion: absolute;
 `;

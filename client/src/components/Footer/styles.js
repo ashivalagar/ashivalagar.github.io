@@ -14,4 +14,5 @@ export const FooterWrapper = styled.div`
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  background: white;
 `;
