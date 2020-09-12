@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const NavWrapper = styled.div`
-  width: 50px;
-  height: 100%;
-`;
-
-export const PullOutMenu = styled.div`
+export const FooterWrapper = styled.div`
+  height: 50px;
+  font-family: Pecita;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -14,11 +14,4 @@ export const PullOutMenu = styled.div`
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  height: 100%;
-`;
-
-export const PullOutText = styled.div`
-  transform: rotate(-90deg);
-  font-size: 8px;
-  font-weight: 500;
 `;

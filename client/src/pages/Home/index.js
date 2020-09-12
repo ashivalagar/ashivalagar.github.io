@@ -1,5 +1,6 @@
 import React from "react";
+import { HomeContent } from "./styles";
 
 export const Home = () => {
-  return <div>Hi</div>;
+  return <HomeContent>Coming Soon...</HomeContent>;
 };
