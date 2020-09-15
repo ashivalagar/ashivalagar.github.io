@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 50px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-left: 50px;
 `;
 
 export const HeaderTitle = styled.div`

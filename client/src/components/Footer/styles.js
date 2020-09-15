@@ -4,8 +4,7 @@ export const FooterWrapper = styled.div`
   height: 50px;
   font-family: Pecita;
   width: 100%;
-  position: fixed;
-  bottom: 0px;
+  float: bottom;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
