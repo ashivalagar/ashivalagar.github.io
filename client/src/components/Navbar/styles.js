@@ -33,22 +33,27 @@ export const PullOutText = styled.div`
   transform: rotate(-90deg);
   font-size: 8px;
   font-weight: 800;
-  margin-left: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
   margin-top: none;
   margin-bottom: none;
 `;
 
 export const SubIconWrapper = styled.div`
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   -webkit-flex-direction: column;
 `;
 
 export const MenuIconLine = styled.div`
+  display: block;
   margin-top: 2px;
   margin-bottom: 1px;
   height: 2px;
-  float: right;
+  position: aboslute;
   clear: right;
   background: black;
   width: ${(props) => {
