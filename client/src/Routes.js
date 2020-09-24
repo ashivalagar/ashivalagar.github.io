@@ -8,19 +8,19 @@ const Routes = () => {
   return (
     <Router>
       <Container>
-        <Navbar />
         <MainWrapper>
           <Header />
           <ContentWrapper>
+            <Navbar />
             <Switch>
               <Route exact path="/">
                 <Home />
               </Route>
             </Switch>
+            <SocialBar />
           </ContentWrapper>
           <Footer />
         </MainWrapper>
-        <SocialBar />
       </Container>
     </Router>
   );

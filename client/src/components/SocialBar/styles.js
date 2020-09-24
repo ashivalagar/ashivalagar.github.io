@@ -5,8 +5,7 @@ export const RightWrapper = styled.div`
   display: flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  position: fixed;
-  right: 0px;
+  float: right;
   width: 50px;
   -webkit-align-items: center;
   align-items: center;
