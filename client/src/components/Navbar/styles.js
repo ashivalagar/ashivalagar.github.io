@@ -26,12 +26,16 @@ export const MenuIconWrapper = styled.div`
   flex-direction: row;
   -webkit-flex-direction: row;
   float: right;
+  align-items: center;
 `;
 
 export const PullOutText = styled.div`
   transform: rotate(-90deg);
   font-size: 8px;
-  font-weight: 500;
+  font-weight: 800;
+  margin-left: 10px;
+  margin-top: none;
+  margin-bottom: none;
 `;
 
 export const SubIconWrapper = styled.div`
@@ -47,6 +51,32 @@ export const MenuIconLine = styled.div`
   float: right;
   clear: right;
   background: black;
-  width: 16px;
-  transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+  width: ${(props) => {
+    let width;
+    switch (props.position) {
+      case "top":
+        width = 20;
+        if (props.active) {
+          width = width * 1.1;
+        }
+        break;
+      case "middle":
+        width = 24;
+        if (props.active) {
+          width = width * 1.5;
+        }
+        break;
+      case "bottom":
+        width = 16;
+        if (props.active) {
+          width = width * 1.3;
+        }
+        break;
+      default:
+        break;
+    }
+    width = width.toString() + "px";
+    return width;
+  }};
+  transition: 0.2s;
 `;
