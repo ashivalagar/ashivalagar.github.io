@@ -10,24 +10,21 @@ import {
 
 export const Navbar = () => {
   const [onHover, setOnHover] = useState(false);
+  const [navState, setNavState] = useState(false);
   return (
-    <NavWrapper active={onHover}>
+    <NavWrapper active={onHover} expand={navState}>
       <PullOutMenu>
         <MenuIconWrapper
           onMouseEnter={() => setOnHover(true)}
           onMouseLeave={() => setOnHover(false)}
+          onClick={() => setNavState(true)}
+          expand={navState}
         >
+          <PullOutText>MENU</PullOutText>
           <SubIconWrapper>
             <MenuIconLine active={onHover} position={"top"} />
             <MenuIconLine active={onHover} position={"middle"} />
             <MenuIconLine active={onHover} position={"bottom"} />
-          </SubIconWrapper>
-
-          <SubIconWrapper>
-            <PullOutText>U</PullOutText>
-            <PullOutText>N</PullOutText>
-            <PullOutText>E</PullOutText>
-            <PullOutText>M</PullOutText>
           </SubIconWrapper>
         </MenuIconWrapper>
       </PullOutMenu>

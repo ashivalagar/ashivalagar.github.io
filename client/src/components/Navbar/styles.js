@@ -18,7 +18,7 @@ export const PullOutMenu = styled.div`
 `;
 
 export const MenuIconWrapper = styled.div`
-  transform: translate(39px);
+  transform: translate(17px);
   cursor: pointer;
   width: 100%;
   display: -webkit-flex;
@@ -33,11 +33,6 @@ export const PullOutText = styled.div`
   transform: rotate(-90deg);
   font-size: 8px;
   font-weight: 800;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 8px;
-  margin-top: none;
-  margin-bottom: none;
 `;
 
 export const SubIconWrapper = styled.div`
@@ -84,4 +79,13 @@ export const MenuIconLine = styled.div`
     return width;
   }};
   transition: 0.2s;
+`;
+
+export const Menu = styled.div`
+  width: 60vw;
+  heigth: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate3d(-60vw, 0, 0);
 `;
