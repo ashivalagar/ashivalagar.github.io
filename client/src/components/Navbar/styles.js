@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
 export const NavWrapper = styled.div`
-  width: ${(props) => (props.active ? "100px" : "50px")};
-  height: 100%;
-  float: left;
-  transition: 0.2s;
+  ${(props) => {
+    if (!props.hide) {
+      return `width: ${props.active ? "100px" : "50px"};
+              height: 100%;
+              float: left;
+              transition: 0.4s;
+      `;
+    } else {
+      return `width: 215vw;
+              heigth: 100%;
+              transition: 0.4s;
+      `;
+    }
+  }}
+  transistion: 0.4s;
 `;
 
 export const PullOutMenu = styled.div`
@@ -82,10 +93,7 @@ export const MenuIconLine = styled.div`
 `;
 
 export const Menu = styled.div`
-  width: 60vw;
-  heigth: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  transform: translate3d(-60vw, 0, 0);
+  height: 100%;
+  width: 100%;
+  background: #dfdfdf;
 `;
