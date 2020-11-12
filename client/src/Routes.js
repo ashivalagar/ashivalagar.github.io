@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import { Header, SocialBar, Navbar, Footer } from "./components";
-import { Home } from "./pages";
+import { Home, Projects, Contact, Resume, Blog } from "./pages";
 import { Container, MainWrapper, ContentWrapper } from "./common/styles";
 
 const Routes = () => {
@@ -15,13 +15,14 @@ const Routes = () => {
   const handleMouseDown = (e, component) => {
     switch (component) {
       case "parent":
-        if (navState === true) {
+        if (navState) {
           toggleMenu();
           setOnHover(false);
         }
         break;
       case "child":
         toggleMenu();
+        setOnHover(false);
         break;
 
       default:
@@ -33,7 +34,7 @@ const Routes = () => {
 
   return (
     <Router>
-      <Container onMouseDown={(e) => handleMouseDown(e, "parent")}>
+      <Container>
         <MainWrapper>
           <Header />
           <ContentWrapper>
@@ -46,6 +47,18 @@ const Routes = () => {
             <Switch>
               <Route exact path="/">
                 <Home />
+              </Route>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/resume">
+                <Resume />
+              </Route>
+              <Route path="/blog">
+                <Blog />
               </Route>
             </Switch>
             <SocialBar />

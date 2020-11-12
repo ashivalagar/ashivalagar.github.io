@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const NavWrapper = styled.div`
+  display: flex;
+  height: 100%;
   ${(props) => {
     if (!props.hide) {
       return `width: ${props.active ? "100px" : "50px"};
-              height: 100%;
               float: left;
               transition: 0.4s;
       `;
     } else {
       return `width: 215vw;
-              heigth: 100%;
               transition: 0.4s;
       `;
     }
@@ -96,4 +96,39 @@ export const Menu = styled.div`
   height: 100%;
   width: 100%;
   background: #dfdfdf;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+`;
+
+export const BackIcon = styled.div`
+  cursor: pointer;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-left: 10%;
+`;
+
+export const MenuContainer = styled.div`
+  height: 100%;
+  padding-top: 12%;
+  padding-left: 5%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  transition: 0.4s;
+`;
+
+export const NavLink = styled.div`
+  font-family: lato;
+  cursor: pointer;
+  margin: 10%;
+  font-size: 200%;
+  font-weight: 1200;
+  width: 100%;
+  transition: 0.4s;
 `;
